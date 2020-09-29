@@ -38,6 +38,10 @@
             </svg>
         </div>
     </div>
+    <div class="changing-I-make">
+        <h2>I make, <span class="I-make" id="i-make">for you.</span></h2>
+    </div>
+    <br><br>
     <div class="discord-box-1">
         <div class="discord-image-1" id="discord-image-1">
             <br>
@@ -107,6 +111,23 @@ hamburger.addEventListener('click', () =>{
     text = !text;
     }
     }, 5200);
+
+
+    var something = true;
+    
+    var x = setInterval(function() {
+    if(something){
+    document.getElementById("i-make").innerHTML = "bots.";
+    something = !something;
+    }else{
+    document.getElementById("i-make").innerHTML = "for you.";
+    something = !something;
+    }
+    }, 2700);
+
+
+
+
     </script>
 <script>
     setInterval(() => {
