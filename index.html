@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./main.js">
 </head>
 
 
@@ -19,10 +20,10 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Services</a></li>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="xp">Experience</a></li>
+            <li><a href="#" id="services">Services</a></li>
         </ul>
     </nav>
     <div class="wave"style="position: relative; min-height: 75vh;" id="wave">
@@ -39,7 +40,7 @@
         </div>
     </div>
     <div class="changing-I-make">
-        <h2>I make, <span class="I-make" id="i-make">for you.</span></h2>
+        <h2>I code<span class="I-make" id="i-make">, for you.</span></h2>
     </div>
     <br><br>
     <div class="discord-box-1">
@@ -102,7 +103,7 @@ hamburger.addEventListener('click', () =>{
 
     var text = true;
     
-    var x = setInterval(function() {
+    var y = setInterval(function() {
     if(text){
     document.getElementById("demo").innerHTML = " Zeedz";
     text = !text;
@@ -113,17 +114,36 @@ hamburger.addEventListener('click', () =>{
     }, 5200);
 
 
-    var something = true;
+
+
+
+let x = -1;
+let xswitch = 1;
+    var something = true
+    setInterval(() => {
+        $('#i-make').fadeIn(500) 
+    }, 4400);
+    $('#i-make').fadeIn(500)
+    setInterval(() => {
+        
+        $('#i-make').fadeOut(500) 
+
+    }, 3400);
     
-    var x = setInterval(function() {
-    if(something){
-    document.getElementById("i-make").innerHTML = "bots.";
-    something = !something;
-    }else{
-    document.getElementById("i-make").innerHTML = "for you.";
-    something = !something;
+setInterval(function() {
+    
+    
+    if (something) {
+        $('#i-make').html(' bots.');
+    } else {
+        $('#i-make').html(', for you.');
     }
-    }, 2700);
+    
+    something = !something;
+    if (x = 1) { xswitch = 1; } else { xswitch = 0; }
+    if (xswitch = 1) { x = x + 0.1; } else { x = x - 0.1; }
+}, 4200);
+    
 
 
 

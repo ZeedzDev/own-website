@@ -55,9 +55,12 @@ html {
 .changing-I-make {
     color: black;
     font-family: 'Secular One', sans-serif;
-    margin-left: 3em;
+    margin-left: 1em;
     font-size: 3em;
     
+}
+.nav-links:hover {
+    color: orange;
 }
 .I-make {
     animation: change 5s infinite forwards;
@@ -76,20 +79,7 @@ html {
     left: 1.2em;
     white-space: nowrap;
 }
-@keyframes change {
-    0% {
-        position: relative;
-        opacity: 100%;
-    }
-    50% {
-        position: -5%;
-        opacity: 0%;
-    }
-    100% {
-        position: auto;
-        opacity: 100%;
-    }
-}
+
 @keyframes type {
     0% {
         width: 0ch;
