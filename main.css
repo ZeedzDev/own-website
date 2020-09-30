@@ -73,7 +73,7 @@ html {
 }
 
 .developer-statement {
-    animation: type 5s steps(27) infinite forwards;
+    animation: type 5s  infinite forwards;
     overflow: hidden;
     
     border-right: 4px solid black;
@@ -92,7 +92,7 @@ html {
 
     }
     50%{
-        width: 18ch
+        width: 18ch;
     }
     100%{
         width: 0ch;
@@ -200,6 +200,6 @@ section{
     .header {
         text-align: left;
         position: relative;
-        padding-left: 0;
+        padding-left: 1px;
     }
 }
