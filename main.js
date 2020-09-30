@@ -14,3 +14,12 @@ xp.addEventListener('mouseover', () =>{
     xp.style.color = "blue"
     console.log('Event triggered')
 })
+
+
+document.onkeypress = function(e) {
+    e = e || window.event
+
+    if(e.keyCode === 13){
+        document.documentElement.classList.toggle('dark-mode');
+    }
+}

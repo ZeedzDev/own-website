@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+.invert {
+    filter: invert(1) hue-rotate(180deg);
+}
 .header {
     color: white;
     padding: 15vh;
