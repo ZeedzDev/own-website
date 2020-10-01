@@ -4,24 +4,29 @@ const xp = document.getElementById('xp')
 
 about.addEventListener('mouseover', () =>{
     about.style.color = "orange"
+    services.style.fontWeight = "light"
     console.log('Event triggered')
 })
 services.addEventListener('mouseover', () =>{
     services.style.color = "orange"
+    services.style.fontWeight = "light"
     console.log('Event triggered')
 })
 xp.addEventListener('mouseover', () =>{
     xp.style.color = "orange"
+    services.style.fontWeight = "light"
     console.log('Event triggered')
 })
 
 
 about.addEventListener('mouseleave', () =>{
     about.style.color = "white"
+    services.style.fontWeight = "bold"
     console.log('Event triggered')
 })
 services.addEventListener('mouseleave', () =>{
     services.style.color = "white"
+    services.style.fontWeight = "bold"
     console.log('Event triggered')
 })
 xp.addEventListener('mouseleave', () =>{
@@ -31,7 +36,12 @@ xp.addEventListener('mouseleave', () =>{
 
 
 
-
+const everythingImage = document.getElementById('everything-background')
+let screenWidth1 = screen.width
+    let halfofScreenWidth1 = screenWidth1/2
+    let halfofScreenWidthMinus5 = halfofScreenWidth - 40
+    
+    everythingImage.style.width = `${halfofScreenWidthMinus5}px`
 
 setInterval(() => {
     changeText('dev-statement')
